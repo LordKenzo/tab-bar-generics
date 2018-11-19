@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs" *ngIf="collection">
+  <li class="nav-item"
+      *ngFor="let item of collection.items"
+      (click)="tabHandler(item)">
+    <a class="nav-link">{{item.title}}</a>
+  </li>
+
+</ul>
